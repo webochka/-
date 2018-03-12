@@ -1,0 +1,67 @@
+$font-sans: 'Open Sans', sans-serif
+$font-ral: 'Raleway', sans-serif
+$font-brin: 'bringin' , sans-serif
+$font-got: 'gothic', sans-serif
+$font-roboto: 'Roboto', sans-serif
+
+@mixin background-img ($img:file, $type:png, $img-size:cover ,$repeat:no-repeat, $x:0, $y:0) 
+    background-image: url(../images/backgraund/#{$img}.#{$type})
+    background-repeat: $repeat
+    background-position: $x+% $y+%
+    background-size: $img-size
+    
+@mixin button()
+	background-color: #36aeea
+	color: white
+	font-family: $font-ral 
+	cursor: pointer 
+	border-radius: 4px
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
+	letter-spacing: 2px
+	&:hover
+		background-color: darken(#36aeea, 7%)
+
+@mixin before-after() 
+	content: ''
+	display: block
+
+@mixin clearfix() 
+	&:after
+		content: ''
+		display: block
+		clear: both
+		
+@mixin position-tl() 
+	position: absolute
+	top: 0
+	left: 0
+
+@mixin position-tr()
+	position: absolute
+	top: 0
+	right: 0
+
+@mixin position-bl()
+	position: absolute
+	bottom: 0
+	left: 0
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.container
+	max-width: 1140px
+	margin: 0 auto
+
+.header
+	@include background-img(header-bg, png, cover, no-repeat, 50, 0)
+	padding: 17px 0 153px
+
+.header_marker
+	@include position-tl()
+	z-index: 1
+	background-color: transparentize(white, 0.5)
+	width: 100%
+	padding-top: 88px
+
+.header_head
+	line-height: 50px
+	position: relative
+	z-index: 2
+	padding-bottom: 156px
+
+.header_logo
+	font-family: $font-brin
+	font-size: 29px
+	color: #56c7ff
+	margin-right: 49px
+
+.header_logo *
+	color: #95a5ad
+
+.header_logo,
+.header_menu
+	float: left
+
+.call-us_button
+	float: right
+
+.header_head,
+.header_menu
+	@include clearfix
+
+.header_menu_link
+	padding: 12px
+	font-family: $font-sans
+	font-size: 12px
+	font-weight: 700
+	color: #95a5ad
+	text-transform: uppercase
+
+.header_menu_link:hover
+	border-bottom: 2px solid #56c7ff
+
+.call-us_button
+	.header_menu_link
+			padding: 14px 46px
+			border: 2px solid #36aeea
+			border-radius: 3px
+			font-family: $font-ral
+			font-weight: 700
+			color: #36aeea
+			letter-spacing: 1px
+			&:hover
+				border-color: darken(#36aeea, 15%)
+				color: darken(#36aeea, 15%)
+				background: transparentize( #36aeea, 0.8)
+
+.header_content
+	border: 3px solid white
+	border-top: none
+	padding: 41px 0 37px 44px
+	position: relative
+
+.header_content:after,
+.header_content:before
+	height: 3px
+	background: white
+
+.header_content:after
+	@include before-after
+	@include position-tl
+	width: 65.2%
+
+.header_content:before
+	@include before-after
+	@include position-tr
+	width: 17.5%
+
+.header_title
+	font-family: $font-sans
+	font-size: 50px
+	font-weight: 700
+	color: white
+	letter-spacing: 8px
+
+.header_title *
+	position: relative
+	margin-top: -20px
+	font-family: $font-brin
+	font-size: 66px
+	font-weight: 400
+	color: #56c7ff
+	letter-spacing: 3px
+	
+.header_description
+	font-family: $font-sans
+	font-size: 18px
+	color: #Ffffff
+	padding-top: 12px
+	line-height: 29px
+	padding-bottom: 27px
+
+.header_button
+	@include button()
+	padding: 21px 80px
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+	
+	
+
+  
+
+
+
+  
+ 
